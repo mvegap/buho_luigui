@@ -1,0 +1,21 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+.container-fluid,.container{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.portada{
+	height: 600px;
+	background-color: #FF6038;
+}
+.se-parte{
+	background-color: #10069F;
+	height: 450px;
+}
+.encuentranos{
+	height: 450px;
+	background-color: #FFD100;
+}

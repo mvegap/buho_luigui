@@ -1,21 +1,115 @@
+
+@font-face{
+	font-family: 'MoonFlower';
+	src: url('../assets/MoonFlower.ttf');
+}
 *{
 	margin:0px;
 	padding:0px;
 }
-.container-fluid,.container{
+.container-fluid,
+.container{
 	padding-left: 0px;
 	padding-right: 0px;
 }
-
 .portada{
-	height: 600px;
+	height: 100vh;
 	background-color: #FF6038;
+	text-align: center;
+}
+.portada a img{
+	width: 20%;
+	height: 20%;
+}
+.portada h1{
+	font-family: 'MoonFlower';
+	font-size: 5em;
+	font-weight: bold;
+	color: #fff;
+}
+.items-buho a img{
+	width: 150px;
+	height: 150px;
+}
+.items-buho h2{
+	font-family: 'MoonFlower';
+	font-size: 3em;
+	font-weight: bold;
+	color: #fff;
 }
 .se-parte{
 	background-color: #10069F;
-	height: 450px;
+	height: 100vh;
+	padding-top: 150px;
 }
 .encuentranos{
-	height: 450px;
+	height: 100vh;
 	background-color: #FFD100;
+}
+.page-title{
+	font-family: 'MoonFlower';
+	font-size: 4.5em;
+	font-weight: bold;
+	color: #fff;
+}
+.desc-title{
+	font-size: 25px;
+	color: #fff;
+}
+.se-parte form{
+	color: #fff;
+	font-size: 16px;
+}
+.se-parte form label,
+.se-parte form input{
+	margin:7px 0px 7px 0px;
+}
+.se-parte form input{
+	border:none;
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+	border-radius: 15px;
+}
+.btn-default{
+	background-color: #fff;
+	border-radius: 20px;
+	color: #000;
+	border-color: #fff;
+	padding:6px 20px 6px 20px;
+	margin-right: 10px;
+}
+.box-search{
+	margin-top: 150px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+.box-search form select{
+	background-color: transparent;
+	border:1px solid #fff;
+	margin:20px 0px;
+}
+.carousel-control{
+	width: 10%;
+	opacity: 0.2;
+}
+.carousel-control.left,
+.carousel-control.right{
+	background-color: transparent;
+	background-image: none;
+}
+.carousel-caption{
+	width: 500px;
+	left: 50%;
+	text-align: left;
+	padding-bottom: 400px;
+}
+.carousel-caption h3{
+	font-family: 'MoonFlower';
+	font-size: 5em;
+	font-weight: bold;
+	color: #fff;	
+}
+.carousel-caption p{
+	font-size: 20px;
+	color: #fff;
 }

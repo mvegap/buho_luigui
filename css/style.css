@@ -27,6 +27,28 @@
 	font-weight: bold;
 	color: #fff;
 }
+.video-background{
+	height: 100vh;
+	width: 100%;
+	background-color: gray;
+}
+.video-background video{
+	position: fixed;
+	width: 100%;
+	height: auto;
+	right: 0px;
+	bottom: 0px;
+}
+/*
+#video-background {
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  width: 100%; 
+  height: auto;
+  z-index: -100;
+}
+*/
 .items-buho a img{
 	width: 150px;
 	height: 150px;

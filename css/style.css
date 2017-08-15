@@ -18,6 +18,7 @@
 }
 .portada{
 	height: 100vh;
+	/*background-color: #FF6038; para mobile*/
 	background-color: transparent;
 	text-align: center;
 }

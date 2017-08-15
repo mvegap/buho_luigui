@@ -7,7 +7,13 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	
+	<section class="video-background">
+
+		<video autoplay loop id="video-background" muted plays-inline>
+		<source src="https://player.vimeo.com/external/158148793.hd.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&profile_id=119&oauth2_token_id=57447761" type="video/mp4">
+		</video>
+
+	</section><!--/.end-video-background-->
 
 	<header id="home-buho">
 
@@ -21,45 +27,48 @@
 				<h1>Yo soy el Búho Luigi</h1>
 
 
-				<div class="row">
-					
+				<div class="row iconos">
+
 					<div class="col-md-4 items-buho">
-						<a href=""><img src="images/icon-products.png" alt=""></a>
+						<a href="" role-link="slide-intro"><img src="images/icon-products.png" alt=""></a>
 						<h2>Productos</h2>
 					</div>
 
 					<div class="col-md-4 items-buho">
-						<a href=""><img src="images/icon-se-parte.png" alt=""></a>
+						<a href="" role-link="se-parte"><img src="images/icon-se-parte.png" alt=""></a>
 						<h2>Sé Parte</h2>
 					</div>
 
 					<div class="col-md-4 items-buho">
-						<a href=""><img src="images/icon-ventas.png" alt=""></a>
+						<a href="" role-link="encuentranos"><img src="images/icon-ventas.png" alt=""></a>
 						<h2>Puntos de Venta</h2>
 					</div>
-				
+
 				</div>
 
-			</div>	
+			</div>
 
 		</div>
 
 
 	</header><!--/.end-header-->
 
-	
+
 	<!-- video background -->
-	<section class="video-background">
+	<!-- <section class="video-background">
 
 		<video autoplay loop id="video-background" muted plays-inline>
 		<source src="https://player.vimeo.com/external/158148793.hd.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&profile_id=119&oauth2_token_id=57447761" type="video/mp4">
 		</video>
 
-	</section><!--/.end-video-background-->
+	</section><!--/.end-video-background--> -->
 
 
 	<!--start slide-->
 	<section id="slide-intro" class="container-fluid">
+		<div class="boton holder hidden-xs hidden-sm">
+      <a href="#" class="animBtn animBtn2 themeB" role-link="home-buho">Home</a>
+    </div>
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 			  <!-- Indicators -->
 			  <ol class="carousel-indicators">
@@ -150,13 +159,13 @@
 
 
 						</div>
-						
+
 
 					</form>
 
 				</div>
 				<div class="col-md-6">
-					<!--/.empty-->
+					<!--image-->
 				</div>
 
 			</div>
@@ -170,15 +179,16 @@
 
 			<div class="row">
 
-				<div class="col-md-6">
+				<div class="col-md-6 mapa">
+					<div id="map"></div>
 				</div>
 
 				<div class="col-md-6 box-search">
-					
+
 					<h2 class="text-center page-title">Encuéntranos</h2>
 
 					<form action="" method="GET">
-						
+
 						<select name="ciudad" id="ciudad" class="form-control">
 							<option>Elige una ciudad</option>
 							<option value="Ciudad 1">Ciudad 1</option>
@@ -202,9 +212,14 @@
 
 
 	</section>
+	<footer id="fin" class="container-fluid text-center">
+	  <img class="pic2" src="assets/images/EBL1.png" alt="Buho Luigi"/>
+	  <h2>EL BÚHO LUIGI</h2>
+	</footer>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2O0FTclPKjtSDYfiNkWPInx7mppOZmgs&callback=initMap" async defer></script>
 </body>
 </html>

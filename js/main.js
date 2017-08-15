@@ -136,17 +136,22 @@ function initMap() {
 }
 
 /*boton Home*/
+function moveScroll(event){
+  var scroll=window.pageYOffset || document.body.scrollTop;
+  var boton=document.getElementsByClassName('animBtn2')[0];
 
-$(window).scroll(function(e) {
-    const cursorY = $(window).scrollTop();
-    console.log(cursorY);
-    if(cursorY>=160){
-      $('.animBtn2').show();
-    }else{
-      $('.animBtn2').hide();
-    }
-  });
+  if(scroll>=160){
+    boton.style.display="block";
+  }
+  if(scroll<=160){
+    boton.style.display="none";
+  }
+  if(scroll>2400){
+    boton.style.display="none";
+  }
+}
 
+window.addEventListener('scroll',moveScroll);
 //boton HOME
 $('.animBtn2').on('click', function(e){
   e.preventDefault();
